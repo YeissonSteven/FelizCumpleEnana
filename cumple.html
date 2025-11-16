@@ -73,5 +73,16 @@
 
     setInterval(crearCorazon, 300);
   </script>
+
+  <button id="giftBtn" style="position: absolute; bottom: 30px; padding: 15px 25px; font-size: 1.2rem; background: #ff4d6d; color: white; border: none; border-radius: 15px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">🎁 Abrir regalo</button>
+
+<div id="ioText" style="display:none; position:absolute; bottom:120px; font-size:3rem; color:white; text-shadow:0 4px 10px rgba(0,0,0,0.4); font-weight:bold;">io >:3</div>
+
+<script>
+    document.getElementById("giftBtn").addEventListener("click", () => {
+      const text = document.getElementById("ioText");
+      text.style.display = text.style.display === "none" ? "block" : "none";
+    });
+  </script>
 </body>
 </html>
